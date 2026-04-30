@@ -97,6 +97,19 @@ showToast({
 - Django >= 3.2
 - Modern Browser (No IE support)
 
+## Contributing
+
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+
+## Support
+
+If you encounter any issues or have suggestions, please open an issue on [GitHub](https://github.com/prakash-thapa/django-toastify/issues).
+
 ## License
 
-MIT
+This project is licensed under the MIT License - see [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Inspired by [React Toastify](https://fkhadra.github.io/react-toastify/introduction)
+- Built for the Django community
