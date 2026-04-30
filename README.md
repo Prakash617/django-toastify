@@ -15,7 +15,7 @@ A modern, highly customizable toast notification system for Django, inspired by 
 
 ## Installation
 
-1. Install the package using pip:
+1. Install the package using pip from [PyPI](https://pypi.org/project/django-toastify/):
    ```bash
    pip install django-toastify
    ```

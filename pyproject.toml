@@ -41,6 +41,7 @@ dependencies = [
 Homepage = "https://github.com/prakash-thapa/django-toastify"
 Repository = "https://github.com/prakash-thapa/django-toastify.git"
 Issues = "https://github.com/prakash-thapa/django-toastify/issues"
+PyPI = "https://pypi.org/project/django-toastify/"
 
 [tool.setuptools.packages.find]
 where = ["."]
