@@ -1,0 +1,30 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'django_toastify/toast.css' %}">
+<script src="{% static 'django_toastify/toast.js' %}"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize with server-side settings
+        if (window.Toastify) {
+            window.Toastify.init({
+                position: "{{ position|default:'top-right' }}",
+                duration: {{ duration|default:3000 }},
+                maxToasts: {{ max_toasts|default:5 }},
+                theme: "{{ theme|default:'light' }}"
+            });
+        }
+
+        const messages = [
+            {% for message in messages %}
+                {
+                    text: "{{ message|escapejs }}",
+                    level: "{{ message.tags }}"
+                },
+            {% endfor %}
+        ];
+
+        if (messages.length > 0) {
+            window.showToasts(messages);
+        }
+    });
+</script>
